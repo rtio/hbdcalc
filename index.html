@@ -2,43 +2,46 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>HexDecBin - Calculator</title>
 </head>
 <body>
-	<form>
-		<div id="form">
-			<fieldset id="fieldset">
-				<legend>Calculator</legend>
-				<p>
-					<select id="opt1" required>
-						<option value="" selected>...</option>
-						<option value="Dec">Dec</option>
-						<option value="Hex">Hex</option>
-						<option value="Bin">Bin</option>
-					</select>
-				</p>
-				<p>
-					<input type="number" id="num"/>
-				</p>
-				<p>Para</p>
-				<p>
-					<select id="opt2" required>
-						<option value="" selected>...</option>
-						<option value="Dec">Dec</option>
-						<option value="Hex">Hex</option>
-						<option value="Bin">Bin</option>
-					</select>
-				</p>
-				<p><button id="convert">Converter</button></p>
-			</fieldset>
-		</div>
-	</form>
+	<nav class='current'>
+		<h1>HexDecBin - Calculator</h1>
+	</nav>
+
+	<article id='main' class="current">
+		<section class="vertical">
+			<p>
+				<input type="radio" name="opt1" value="Dec">Dec
+				<input type="radio" name="opt1" value="Hex">Hex
+				<input type="radio" name="opt1" value="Bin">Bin
+			</p>
+			<p>
+				<input type="text" id="num"/>
+			</p>
+
+			<p>
+				Para:
+			</p>
+			<p>
+				<input type="radio" name="opt2" value="Dec">Dec
+				<input type="radio" name="opt2" value="Hex">Hex
+				<input type="radio" name="opt2" value="Bin">Bin
+			</p>
+			<p>
+				<a href='#' id="convert" class="button action">Converter</a>
+			</p>
+		</section>
+	</article>
+
 	<!-- Estilo da página -->
-	<link href="css/font.css" rel="stylesheet" type="text/css">
+	<!--<link href="css/font.css" rel="stylesheet" type="text/css">-->
 	<link href="css/style.css" rel="stylesheet">
+	<link href="chocolate/css/chui-android-3.7.0.min.css" rel="stylesheet">
 	<!-- JavaScript functions and frameworks -->
 	<script src="js/jquery/jquery-1.11.1.min.js"></script>
 	<script src="js/functions.js"></script>
+	<script src="chocolate/js/chui-3.7.0.min.js"></script>
 </body>
 </html>
