@@ -1,0 +1,19 @@
+body{
+background: rgb(226,226,226);
+}
+#form {	
+	position:absolute;
+	left:50%;
+	top:25%;
+	margin-left:-110px;
+	margin-top:-40px;
+}
+#fieldset{
+	font-family: 'Open Sans', sans-serif;
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border-radius: 6px 6px 6px 6px;	
+	-webkit-box-shadow:inset 6px 6px 6px 6px #FFFFFF;
+	box-shadow:inset 6px 6px 6px 6px #FFFFFF;
+	text-shadow: 1px 1px 1px #919191;
+}
+	
